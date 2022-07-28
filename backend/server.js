@@ -12,9 +12,6 @@ dotenv.config();
 
 connectDB();
 
-// app.get('/', (req, res) => {
-//     res.send("running");
-// })
 
 app.use('/api/user', userRoutes);
 app.use('/api/chat', chatRoutes);
@@ -87,3 +84,4 @@ io.on("connection", (socket) => {
         });
     })
 })
+
